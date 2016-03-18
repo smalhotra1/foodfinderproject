@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="scripts/jquery-1.12.1.js"></script>
+<link rel="stylesheet" href="styles/Miami_Coconut_style.css">
+<link rel="stylesheet" href="styles/stars.css">
+<link rel="stylesheet" href="styles/footer.css">
+<script type="text/javascript" src="scripts/style.js"></script>
+<title>Restaurant Home Page Website</title>
+</head>
+<body>
+<iframe src="header.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" width="100%" height="90px">
+</iframe>
+<main>
+<!-- Banner with Rest image-->
+<section class="banner" style="height:430px;" >
+<div class="container">
+<div class="search">
+<input type="text" class="input_search autosuggesttag" autocomplete="off" id="hp_tags" name="hp_tags" placeholder="Know what you want? Search for dishes, drinks &amp; restaurants">
+<input type="button" class="search_btn" onclick="search_submit('hp_tags');" value="search" id="srch_submit">
+<div class="suggestions" id="sugg_hp_tags" style="display: none;">
+ </div>
+ </div>
+ <h1 class="res-name left" style="">
+<span itemprop="name" style="font-size: 90%">Joel Robuchon</span>
+</h1>
+<div class="rating">
+4.1
+</div><hr />
+<!-- Banner footer with Review and Rating section-->
+<div class="banner_footer">
+<a href="#reviewAnchor">Write Review</a>
+<a href="">Your Rating</a>
+</div>
+ </div>
+ <div class="ratingsInput">
+<form id="ratingsForm">
+	<div class="stars">
+		<input type="radio" name="star" class="star-1" id="star-1" />
+		<label class="star-1" for="star-1">1</label>
+		<input type="radio" name="star" class="star-2" id="star-2" />
+		<label class="star-2" for="star-2">2</label>
+		<input type="radio" name="star" class="star-3" id="star-3" />
+		<label class="star-3" for="star-3">3</label>
+		<input type="radio" name="star" class="star-4" id="star-4" />
+		<label class="star-4" for="star-4">4</label>
+		<input type="radio" name="star" class="star-5" id="star-5" />
+		<label class="star-5" for="star-5">5</label>
+		<span></span>
+	</div>  
+</form>
+</div>
+</section>
+<!-- LHS Restaurant details section-->
+<div class="res-left-area">
+<span class="phone">
+PHONE NUMBER	
+</span><br>
+<span class="res-tel">
+(702) 891-7925	
+</span><br><br>
+<span class="address">
+ADDRESS
+</span><br>
+3799 Las Vegas Boulevard S, 
+<br> NV 89109 <br><br>
+<span class="cisines">CUISINES</span><br>
+French, Seafood <br><br>
+<span class="time">OPENING HOURS</span><br>
+5:30 PM to 10 PM
+</div>
+<!-- User Input Review Box-->
+<aside class="centre_details">
+<div class="menu">
+<span class="s-title" style="margin-left: 1.8%;">MENU</span>
+<div class="preview__item">
+<a href="">
+<img class="" src="images/miami_Coconut_m1.jpg" style="display: inline;">
+ </a>
+ <a href="">
+<img class="" src="images/miami_Coconut_m1.jpg" style="display: inline;">
+ </a>
+</div>
+</div><br><br><br><br><br><br>
+<div class="photos">
+<span class="s-title" style="margin-left: 1.8%;">Photos</span>
+<div class="preview__item">
+<a href="">
+<img class="" src="images/miami_coconut_p1.jpg" style="display: inline;">
+ </a>
+ <a href="">
+<img class="" src="images/miami_rest1_coconut3.jpg" style="display: inline;">
+ </a>
+ <a href="">
+<img class="" src="images/miami_rest1_coconut1.JPG" style="display: inline;">
+ </a>
+</div>
+</div><br><br><br><br><br><br>
+<div class="review">
+<span class="s-title">WRITE A REVIEW</span>
+<div class ="reviewBox">
+<a href="#" id="reviewAnchor" style="text-decoration:none ; width : 400px"  onclick="show_leave_review(); return false;">
+<div class="reviewCol" style="word-wrap: break-word; width: 400px">
+Please write at least 140 characters about your personal experience at <br>this restaurant. If the restaurant hosted you and is expecting this <br>review,please mention so.<br><br>
+</div>
+</a>
+<!-- User Input Review Section-->
+<div id="leave_review" class="pop_wrap none" style="display:block">
+	<div class="reviewWrap">
+	<div class="reviewHead">
+		<div class="default-section-title mbot0 mt0" style="margin-left: 40px;margin-top:10px;">
+Leave a Review </div>
+<a class="cancel" onclick="close_review();" href="#"><img src="images/cancel_pop_btn.jpg" height="43"></a>
+</div>
+<h4 style="margin-left:40px;color:#9a9a9a ;">YOUR RATING</h4>
+ <div class="ratingsInput" style="margin-top: 10px; margin-left:30px;background-color:#cb202d ;">
+<form id="ratingsForm">
+	<div class="stars">
+		<input type="radio" name="star" class="star-1" id="star-1" />
+		<label class="star-1" for="star-1">1</label>
+		<input type="radio" name="star" class="star-2" id="star-2" />
+		<label class="star-2" for="star-2">2</label>
+		<input type="radio" name="star" class="star-3" id="star-3" />
+		<label class="star-3" for="star-3">3</label>
+		<input type="radio" name="star" class="star-4" id="star-4" />
+		<label class="star-4" for="star-4">4</label>
+		<input type="radio" name="star" class="star-5" id="star-5" />
+		<label class="star-5" for="star-5">5</label>
+		<span></span>
+	</div>  
+</form>
+</div><hr style="margin-top: 80px; margin-left:20px; "/>
+<textarea  aria-multiline="true" contenteditable="true" class="review_textarea" id="review-form-textarea-id"  placeholder="Your review is a great asset to us .Please  provide your review and rating here . Got recommendations for your favorite dishes and drinks, or something everyone should try here? Include that too!: atleast 140 characters long ." ></textarea> <br><br><br>
+<a href="javascript:;" id="writeReview" class="pop_submit" style="text-decoration:none">PUBLISH REVIEW</a>
+	</div>
+	</div>
+</div>
+</div>	
+</aside>
+</main>
+</body>
+<iframe src="footer.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" width="109.4%" height="90px" style="margin-left: -1em;">
+ </iframe>
+ </html>
