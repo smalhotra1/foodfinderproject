@@ -1,0 +1,28 @@
+main{
+    
+    width: 100%;
+    float: left;
+    min-height: 550px;
+	
+}
+body {
+    
+	background-color:#ecd9c6;
+	
+    }
+p{
+	font-weight: italic;
+	font-family: arial;
+	font-size: 15px;
+	line-height: 30px;
+	margin: 10px;
+	text-align: justify;
+	padding: 10px;
+		
+		
+	}
+	h3{ font-weight: bold;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	color:  black;}

@@ -1,0 +1,100 @@
+<head>
+<meta charset="UTF-8">
+<script src="scripts/Login.js">
+
+</script>
+</head>
+<body>
+
+<style>
+input[type=text] {
+    width: 50%;
+    padding: 10px 10px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	
+}
+input[type=password]{
+width: 200px;
+padding: 10px 10px;
+margin:6px 0;
+display: inline-block;
+border: 1px solid #ccc ;
+    border-radius: 4px;
+    box-sizing: border-box;}
+
+input[type=submit] {
+    width: 200px;
+    background-color: #cb202d;
+    color: white;
+    padding: 10px 10px;
+    margin: 6px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	float:center;
+}
+
+input[type=submit]:hover {
+    background-color: #ff6666;
+}
+
+input[type=date] {
+    width: 200px;
+    
+   padding: 10px 10px;
+    margin: 6px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	float:center;
+}
+label{
+font-size:15px;
+font-family:'Comic Sans MS', cursive, sans-serif;
+}
+
+h3 { font-size:20px;
+font-family:'Comic Sans MS', cursive, sans-serif;
+color:#cb202d;
+}
+
+.error{visibility: hidden;
+color:red;
+font-style: italic;}
+
+</style>
+<body style="background-color:#ecd9c6">
+<pre>
+
+<h3 id="abc">Register with FoodFinder...</h3><div><form name="myForm" action=""
+onsubmit="javascript: return validateForm();" method="get">
+ <label for="fname">First Name </label>
+ <input type="text" id="fname" class = "tooltip"><span id="errfname" class="error">This is required</span>
+ <label for="lname">Last Name </label>
+ <input type="text" id="lname" name="lastname"><span id="errlname" class="error" >This is required</span>
+ <label for="Email">Email </label>
+ <input type="text" id="email" name="email" placeholder="abc@gmail.com" ><span id="erremail" class="error">This is required</span>
+ <label for="Password" >Password </label>
+ <input type="password" id="password" name="password" placeholder="*********">
+ <label for="ConPassword" >Confirm Password </label>
+ <input type="password" id="Conpassword" name="Conpassword" placeholder="*********"><span id="errpass" class="error">Passwords you entered doesnot match</span>
+ 
+ <label for="DOB"  >DOB *</label>
+ <input type="date" id="date" name="date" placeholder="mm/dd/yy">
+ 
+ <label for="Gender" >Gender</label>
+  <input type="radio" name="gender" value="male" checked> Male
+  <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="other"> Other
+  <input type="submit" value="Submit">
+  </pre>
+  
+  </form>
+</div>
+</aside>
+</body>
+</html>

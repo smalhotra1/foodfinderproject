@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Restaurant Home Page Website</title>
+<script>
+function validate(){
+var reg = /^([A-Za-z0-9_\-\.]){1,}\@([A-Za-z0-9_\-\.]){1,}\.([A-Za-z]{2,4})$/;
+	var add = document.forms["contact"]["email"].value;
+	if(reg.test(add)== false){
+		alert("Email: Invalid email, Please enter a valid email ");
+		document.forms["contact"]["email"].focus();
+		return false;
+	}
+	 
+}
+</script>
+</head>
+<body>
+<style>
+input[type=text] {
+    width: 50%;
+    padding: 10px 10px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	
+}
+
+
+input[type=submit] {
+    width: 200px;
+    background-color: #ff5050;
+    color: white;
+    padding: 10px 10px;
+    margin: 6px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	float:center;
+}
+
+input[type=submit]:hover {
+    background-color: #ff6666;
+}
+label{
+font-size:15px;
+font-family:'Comic Sans MS', cursive, sans-serif;
+}
+
+h3 { font-size:20px;
+font-family:'Comic Sans MS', cursive, sans-serif;
+color:#cb202d;
+margin-top: -2.5em;
+}
+#Message{
+width: 50%;
+height: 300px;
+
+}
+</style>
+<body style="background-color:#ecd9c6;">
+<iframe src="header.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" width="100%">
+    </iframe>
+<main>
+<pre>
+
+<h3 id="abc">Contact Us...</h3><div><form  name="contact"  method="post" onsubmit="javascript: return validate();">
+ <label for="name">Name</label>
+ <input type="text" id="Name" required>
+ <label for="Email">Email</label>
+ <input type="text" id="email" name="email" placeholder="abc@gmail.com" required>
+ <label for="msg">Message</label>
+ <textarea name="message" rows="15" cols="80"></textarea>
+ <input type="submit" value="Submit">
+</form>
+</main>
+</body>

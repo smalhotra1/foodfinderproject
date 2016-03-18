@@ -1,0 +1,95 @@
+#logo{
+    float: left;
+    font-size: 18px;
+    font-height: 200px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 10px 0 0 2px;
+    width: 50px;
+    height: 70px;
+    color:  #cb202d;
+
+}
+#logo img{
+padding: 0 0 0 100px;
+margin-top: -40px;
+width: 90px;
+height: 70px;
+}
+head{background-color: White;}
+
+	header{
+	background-image:url("back2.jpg");
+	background-repeat:no-repeat;
+	background-size:100%;
+	}
+	input[type=text] {
+    float:right;
+    width: 100px;
+    height: 45px;
+    
+    -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s;
+    
+	box-sizing: border-box;
+    border: 2px solid #ccc;
+	background-image: url('../images/search.png');
+	background-size: 20px 20px;
+	background-position: right;  
+    background-repeat: no-repeat;
+    padding: 10px 10px 10px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+   
+    
+}
+
+input[type=text]:hover{
+
+    width: 100%;
+   	}
+input:focus{
+    outline: none;
+}
+	button {
+		float:right;
+  display: inline-block;
+  border-radius: 2px;
+  background-color: #cb202d;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  width: 100px;
+  height:40px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
